@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+	<title>Link-Pseudo-Klassen</title>
+	<meta charset="utf-8">
+	<style>
+		*{	/*Universalselektor*/
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		html{
+			font: 1rem Verdana, sans-serif;
+		}
+		
+		/*
+		a:link { color:red;} - nicht besuchter Link 
+		a:visited { color:green;} - besuchter Link 
+		a:hover { color:blue;} - Maus über dem Link 
+		a:focus { color:grey;} - Element das als letztes angeklickt wurde hat den Focus
+		a:active {color:yellow;} - klick auf Link 
+		*/
+		
+		nav a{
+			text-decoration: none;
+			color: #000;
+			background: orange;
+			padding: 1rem;
+			display: inline-block;
+		}
+		nav a:hover{
+			background: #000;
+			color:orange;
+		}
+	</style>
+</head>
+<body>
+	<h1>Link-Pseudo-Klassen</h1>
+	<nav>
+		<p>
+			<a href="#">Home</a>
+			<a href="#">Mehlmützen</a>
+			<a href="#">Torten</a>
+		</p>
+	</nav>
+</body>
+</html>
